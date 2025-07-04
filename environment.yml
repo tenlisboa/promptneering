@@ -16,8 +16,10 @@ dependencies:
       - langchain-text-splitters
       - langchain-core
       - langchain-openai
+      - langchain-ollama
       - beautifulsoup4
       - pydantic-settings
       - ipython
       - dotenv
       - ipykernel
+      - sentence-transformers
