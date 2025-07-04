@@ -1,0 +1,23 @@
+name: promptneering
+dependencies:
+  - python=3.13.4
+  - numpy
+  - matplotlib
+  - pandas
+  - typing-extensions
+  - pip:
+      - langchain-community
+      - tiktoken
+      - langchain-openai
+      - langchainhub
+      - chromadb
+      - langchain
+      - langgraph
+      - langchain-text-splitters
+      - langchain-core
+      - langchain-openai
+      - beautifulsoup4
+      - pydantic-settings
+      - ipython
+      - dotenv
+      - ipykernel
