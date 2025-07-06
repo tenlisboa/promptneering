@@ -1,11 +1,1 @@
-# Active-Prompt
-
-
-Chain-of-thought (CoT) methods rely on a fixed set of human-annotated exemplars. The problem with this is that the exemplars might not be the most effective examples for the different tasks. To address this, [Diao et al., (2023)](https://arxiv.org/pdf/2302.12246.pdf) recently proposed a new prompting approach called Active-Prompt to adapt LLMs to different task-specific example prompts (annotated with human-designed CoT reasoning).
-
-Below is an illustration of the approach. The first step is to query the LLM with or without a few CoT examples. *k* possible answers are generated for a set of training questions. An uncertainty metric is calculated based on the *k* answers (disagreement used). The most uncertain questions are selected for annotation by humans. The new annotated exemplars are then used to infer each question. 
-
-
-Image Source: [Diao et al., (2023)](https://arxiv.org/pdf/2302.12246.pdf)
-
-
+Active-Prompt is a new prompting approach proposed by Diao et al. (2023) to enhance the adaptability of large language models (LLMs) to task-specific examples, addressing the limitations of fixed human-annotated exemplars in chain-of-thought (CoT) methods. The process begins by querying the LLM with or without CoT examples, generating *k* possible answers for training questions, and calculating an uncertainty metric based on the disagreement among these answers. The questions with the highest uncertainty are then selected for human annotation, and the newly annotated exemplars are utilized to infer responses for each question.

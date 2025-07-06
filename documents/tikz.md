@@ -1,18 +1,1 @@
-# Drawing TiKZ Diagram
-
-
-## Background
-This prompt tests an LLM's code generation capabilities by prompting it to draw a unicorn in TiKZ. In the example below the model is expected to generated the LaTeX code that can then be used to generate the unicorn or whichever object was passed. 
-
-## Prompt
-```
-Draw a unicorn in TiKZ
-```
-
-## Code / API
-
-
-
-
-## Reference
-- [Sparks of Artificial General Intelligence: Early experiments with GPT-4](https://arxiv.org/abs/2303.12712) (13 April 2023)
+The document discusses testing an LLM's code generation abilities by prompting it to create a TiKZ diagram of a unicorn. The example prompt is "Draw a unicorn in TiKZ," which is expected to generate corresponding LaTeX code for the drawing. Additionally, it references a paper titled "Sparks of Artificial General Intelligence: Early experiments with GPT-4" published on April 13, 2023.

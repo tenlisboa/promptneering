@@ -1,5 +1,1 @@
-# GraphPrompts
-
-[Liu et al., 2023](https://arxiv.org/abs/2302.08043) introduces GraphPrompt, a new prompting framework for graphs to improve performance on downstream tasks.
-
-More coming soon!
+GraphPrompt, introduced by Liu et al. in 2023, is a new prompting framework designed to enhance performance on downstream tasks involving graphs. More details will be provided soon.

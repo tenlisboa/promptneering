@@ -1,17 +1,1 @@
-# Proof of Infinite Primes in Shakespeare Style
-
-
-## Background
-The following prompt tests an LLM's capabilities to write a proof that there are infinitely many primes in the style of a Shakespeare play.
-
-## Prompt
-```markdown
-Write a proof of the fact that there are infinitely many primes; do it in the style of a Shakespeare play through a dialogue between two parties arguing over the proof.
-```
-
-## Code / API
-
-
-
-## Reference
-- [Sparks of Artificial General Intelligence: Early experiments with GPT-4](https://arxiv.org/abs/2303.12712) (13 April 2023)
+The document presents a prompt for an LLM to create a proof of the infinitude of primes in the style of a Shakespearean play, featuring a dialogue between two characters debating the proof. The prompt is encapsulated as ```"Write a proof of the fact that there are infinitely many primes; do it in the style of a Shakespeare play through a dialogue between two parties arguing over the proof."``` Additionally, it references a related work titled "Sparks of Artificial General Intelligence: Early experiments with GPT-4" from April 2023.

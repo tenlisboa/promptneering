@@ -1,15 +1,1 @@
-# Directional Stimulus Prompting
-
-
-[Li et al., (2023)](https://arxiv.org/abs/2302.11520) proposes a new prompting technique to better guide the LLM in generating the desired summary.
-
-A tuneable policy LM is trained to generate the stimulus/hint. Seeing more use of RL to optimize LLMs.
-
-The figure below shows how Directional Stimulus Prompting compares with standard prompting. The policy LM can be small and optimized to generate the hints that guide a black-box frozen LLM.
-
-
-Image Source: [Li et al., (2023)](https://arxiv.org/abs/2302.11520)
-
-Full example coming soon!
-
-
+Directional Stimulus Prompting, proposed by Li et al. (2023), introduces a new technique to enhance the guidance of large language models (LLMs) in generating desired summaries. This method involves training a tuneable policy language model (LM) to produce stimuli or hints, leveraging reinforcement learning to optimize LLMs. The approach allows for a smaller, optimized policy LM to generate hints that effectively guide a black-box frozen LLM, as illustrated in the comparison with standard prompting. An example of this technique will be provided soon.

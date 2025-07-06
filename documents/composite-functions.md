@@ -1,16 +1,1 @@
-# Evaluating Composite Functions
-
-
-## Background
-This prompt tests an LLM's mathematical capabilities by prompting it to evaluate a given composition function.
-
-## Prompt
-
-Suppose $$g(x) = f^{-1}(x), g(0) = 5, g(4) = 7, g(3) = 2, g(7) = 9, g(9) = 6$$ what is $$f(f(f(6)))$$?
-
-## Code / API
-
-
-
-## Reference
-- [Sparks of Artificial General Intelligence: Early experiments with GPT-4](https://arxiv.org/abs/2303.12712) (13 April 2023)
+The document discusses evaluating composite functions, specifically testing an LLM's mathematical capabilities. It presents a prompt where the function \( g(x) = f^{-1}(x) \) is defined with specific values: \( g(0) = 5 \), \( g(4) = 7 \), \( g(3) = 2 \), \( g(7) = 9 \), and \( g(9) = 6 \). The main question posed is to find \( f(f(f(6))) \).
