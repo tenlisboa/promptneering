@@ -1,19 +1,13 @@
-from langchain_core.messages import BaseMessage
-from typing_extensions import TypedDict
-from typing import Annotated 
-from langgraph.graph.message import add_messages
+from typing import Any
 from langgraph.graph import StateGraph, START
 from langgraph.graph.state import CompiledStateGraph
 from langgraph.prebuilt import ToolNode, tools_condition
 from langgraph.checkpoint.memory import InMemorySaver
 from agents.nodes import Assistant
-
-class State(TypedDict):
-    query: Annotated[str, lambda x: x.strip()]
-    messages: Annotated[list[BaseMessage], add_messages]
+from agents.state import State
 
 class Agent:
-    def __init__(self, tools=None):
+    def __init__(self, tools: list[Any]):
         self.builder = StateGraph(State)
         self.tools = tools
 

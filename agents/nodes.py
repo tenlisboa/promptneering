@@ -1,10 +1,10 @@
 from prompts import load
-from agents.agents import State
+from agents.state import State
 from langchain_core.messages import SystemMessage 
 from langchain_openai import ChatOpenAI
 
 class Assistant:
-    def __init__(self, tools=None):
+    def __init__(self, tools: list):
         llm =ChatOpenAI(
             model='gpt-4o-mini',
             temperature=0.0
