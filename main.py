@@ -1,27 +1,26 @@
+import gradio as gr
 from agents.agents import Agent
 from langchain_core.messages import HumanMessage
+from tools.knowledge import knowledge_tool
 
-def main():
-    agent = Agent([])
-    compiled_graph = agent.compile()
+agent = Agent([knowledge_tool])
+compiled_graph = agent.compile()
 
-    query = "Create a simple prompt for a chatbot."
-    state = {
-        "query": query,
-        "messages": [
-            HumanMessage(content=query)
-        ]
-    }
+def gradio_chat(query):
+    messages = [HumanMessage(content=query)]
+    config = {'thread_id': "gradio"}
+    response = compiled_graph.invoke({"messages": messages, "query": query}, {'configurable': config})
+    for m in reversed(response['messages']):
+        if not isinstance(m, HumanMessage) and hasattr(m, 'content'):
+            return m.content
+    return "No response."
 
-    config = {
-        "configurable": {
-            "thread_id": "12345",
-        }         
-    }
-    
-    response = compiled_graph.invoke(state, config)
-    for m in response['messages']:
-        m.pretty_print()
+iface = gr.Interface(
+    fn=gradio_chat,
+    inputs=gr.Textbox(lines=2, label="Your question"),
+    outputs=gr.Textbox(label="Assistant"),
+    title="Prompt Engineering Assistant"
+)
 
 if __name__ == "__main__":
-    main()
+    iface.launch()
